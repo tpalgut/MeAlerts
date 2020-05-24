@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SummaryActivity" >
+    <item android:id="@+id/action_pivot"
+        android:title="@string/action_pivot"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_nearest"
+        android:title="@string/action_nearest"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AlertActivity"
+    tools:showIn="@layout/activity_alert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alert_list"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:choiceMode="singleChoice"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".AlertActivity"
+            tools:listitem="@layout/item_content"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

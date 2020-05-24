@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ParseActivity"
+    tools:showIn="@layout/activity_parse">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:id="@+id/scrollViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBarP"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/checkBoxClr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Clear Old Alerts" />
+
+        <Button
+            android:id="@+id/buttonParse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parse Email" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
